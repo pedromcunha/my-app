@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp"> <!-- Gets the module -->
+<head>
+	<meta charset="UTF-8">
+	<title>Angular Demo</title>
+<script src="angular/angular.min.js"></script>	
+<script src="../js/controllers.js"></script>
+		<link rel="stylesheet" href="../css/style.css">
+</head>
+	<body>
+		<div class="main" ng-controller = "">
+			<h2>{{students.name}}</h2>
+			<ul class="studentlist">
+				<li class="student cf" ng-repeat="student in students">
+					<img ng-src="../images/{{student.shortname}}_tn.jpg" alt="Photo of {{student.name}}">
+					<div class="info">
+						<h2>{{student.name}}</h2>
+						<h3>{{student.reknown}}</h3>
+						<p>{{student.bio}}</p>
+					</div>
+				<li>
+			</ul>
+
+		</div>
+	</body>
+</html>

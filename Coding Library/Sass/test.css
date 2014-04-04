@@ -1,0 +1,12 @@
+body {
+  background: #eee; }
+
+.blog .entry p {
+  color: red;
+  margin: 20px; }
+  html.csscolumns .blog .entry p {
+    column-count: 2;
+    column-gap: 10px;
+    margin: 10px; }
+.blog .entry h1 {
+  font-size: 13em; }

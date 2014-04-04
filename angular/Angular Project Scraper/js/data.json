@@ -1,0 +1,38 @@
+[
+	{
+		"name" : "Pedro Cunha",
+		"shortname" : "Pedro_Cunha",
+		"reknown" : "Front End Developer",
+		"bio" : "Aspiring to become a front end dev."
+ 	},
+ 		{
+		"name" : "Miguel Fonduer",
+		"shortname" : "Miguel_Fondeur",
+		"reknown" : "Front End Developer",
+		"bio" : "Looking for become the next stack creator"
+ 	},
+ 		{
+		"name" : "Dmitry Pavluk",
+		"shortname" : "Dmitry_Pavluk",
+		"reknown" : "UI/UX Engineer",
+		"bio" : "Best questions ever"
+ 	},
+ 		{
+		"name" : "Ethan Robinson",
+		"shortname" : "Ethan_Robinson",
+		"reknown" : "Biz Development/Marketing",
+		"bio" : "Can analyze and sell the shit out of anything"
+ 	},
+ 		{
+		"name" : "Xin Wang",
+		"shortname" : "Xin_Wang",
+		"reknown" : "Product Manager",
+		"bio" : "Gets shit done"
+ 	},
+ 		{
+ 		"name" : "Camille Basurto",
+ 		"shortname" : "Camille_Basurto",
+ 		"reknown" : "Sales",
+ 		"bio" : "Can sell you shit"
+ 	}
+		]

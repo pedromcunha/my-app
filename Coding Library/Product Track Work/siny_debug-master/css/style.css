@@ -1,0 +1,44 @@
+body{
+	background-color: #d3d3d3;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header{
+	font-size: 30px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+ul{
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+#container{
+	width: 800px;
+	margin: 0 auto;
+}
+
+img{
+	margin: 0 auto;
+	display: block;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: #555;
+}
+
+h2{
+	text-align: center;
+}
+
+.contact{
+	margin: 0 auto;
+	text-align: center;
+}
