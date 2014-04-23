@@ -5,17 +5,36 @@
 	<title>Angular Demo</title>
 <script src="angular/angular.min.js"></script>	
 <script src="../js/controllers.js"></script>
+ <script src="../js/filters.js"></script>
 		<link rel="stylesheet" href="../css/style.css">
 </head>
 	<body>
+		Search: <input ng-model="query">
+  		<br>Sort by:
+  		<select ng-model="orderProp">
+    		<option value="name">Alphabetical</option>
+    		<option value="marketing">Marketing</option>
+    		<option value="marketing">Sales & Account Management</option>
+    		<option value="marketing">Product & Design</option>
+    		<option value="marketing">Web Development</option>
+  		</select>
 		<div class="main" ng-controller = "controllerOne">
 			<h2>{{students.name}}</h2>
 			<ul class="studentlist">
-				<li class="student cf" ng-repeat="student in students">
+				<li class="student cf" ng-repeat="student in students | filter:query | orderBy:orderProp">
 					<img ng-src="{{student.image}}" alt="Photo of {{student.name}}">
 					<div class="info">
 						<h2>{{student.name}}</h2>
 						<p>{{student.bio}}</p>
+						<p>{{student.track}}</p>
+					</div>
+					<div>
+						<dl>
+							<dt>Infared</dt>
+							<dd>{{phone.connectivity}}</dd>
+							<dt></dt>
+							<dd></dd>
+						</dl>
 					</div>
 				<li>
 			</ul>
