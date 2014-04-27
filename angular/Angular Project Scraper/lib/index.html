@@ -2,40 +2,37 @@
 <html lang="en" ng-app="myApp"> <!-- Gets the module -->
 <head>
 	<meta charset="UTF-8">
-	<title>Angular Demo</title>
+	<title>SI Student Network</title>
 <script src="angular/angular.min.js"></script>	
 <script src="../js/controllers.js"></script>
  <script src="../js/filters.js"></script>
 		<link rel="stylesheet" href="../css/style.css">
 </head>
 	<body>
-		Search: <input ng-model="query">
-  		<br>Sort by:
+		<div class="searches">
+		<h2>Search by Name: </h2><input type="text" id="any" ng-model="filter.name" placeholder="any">
+  		<br><h2>Sort by:</h2>
+  	</div>
   		<select ng-model="orderProp">
     		<option value="name">Alphabetical</option>
-    		<option value="marketing">Marketing</option>
-    		<option value="marketing">Sales & Account Management</option>
+    		<option value="track">Marketing</option>
+    		<option value="track.marketing">Sales & Account Management</option>
     		<option value="marketing">Product & Design</option>
     		<option value="marketing">Web Development</option>
   		</select>
+  		
+   
 		<div class="main" ng-controller = "controllerOne">
 			<h2>{{students.name}}</h2>
 			<ul class="studentlist">
-				<li class="student cf" ng-repeat="student in students | filter:query | orderBy:orderProp">
+				<li class="student cf" ng-repeat="student in students | filter:{name: filter.name}| orderBy:orderProp">
 					<img ng-src="{{student.image}}" alt="Photo of {{student.name}}">
 					<div class="info">
 						<h2>{{student.name}}</h2>
 						<p>{{student.bio}}</p>
 						<p>{{student.track}}</p>
 					</div>
-					<div>
-						<dl>
-							<dt>Infared</dt>
-							<dd>{{phone.connectivity}}</dd>
-							<dt></dt>
-							<dd></dd>
-						</dl>
-					</div>
+					
 				<li>
 			</ul>
 

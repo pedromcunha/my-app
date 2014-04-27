@@ -22,7 +22,7 @@ request('http://students.startupinstitute.com/2014/new-york/spring/', function (
 			console.log(dataArray);
 			// Last but not least push it into an array we created earlier.
 			// Now push that log into a json file, I hope this works. It didn't work, dammit.
-			var toFile = 'temp/students.xml';
+			var toFile = 'temp/students.json';
 			fs.writeFile(toFile, JSON.stringify( dataArray ), "utf8", function(err){
 				if(err) {
 					console.log(err)
