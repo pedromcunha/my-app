@@ -260,5 +260,11 @@ a.small {
 	max-width: 130px;
 	border-radius: 20px;
 }
-
+.searchArea {
+	margin: 0 auto;
+	display: block;
+	width: 400px;
+	padding-left: 50px;
+	padding-top: 30px;
+}
 

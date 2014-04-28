@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="../css/style.css">
 </head>
 	<body>
+	<div class="searchArea">
+		<h1>SINY Student Directory</h1>
 		<div class="searches">
 		<h2>Search by Name: </h2><input type="text" id="any" ng-model="filter.name" placeholder="any">
   		<br><h2>Sort by:</h2>
@@ -20,7 +22,7 @@
     		<option value="marketing">Product & Design</option>
     		<option value="marketing">Web Development</option>
   		</select>
-  		
+  	</div>
    
 		<div class="main" ng-controller = "controllerOne">
 			<h2>{{students.name}}</h2>
